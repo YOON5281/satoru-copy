@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrap {
+  height: 5500px;
+}
+
+.main_title {
+  margin: 0 auto;
+  width: 40%;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.main_img {
+  /* border: 1px solid red; */
+  margin: 10px;
+  display: flex;
+}
+.main_img .img-box {
+  position: relative;
+  /* border: 1px solid red; */
+  overflow: hidden;
+}
+.main_img .img-box .shadow {
+  background-color: black;
+  opacity: 0.7;
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  bottom: 450px;
+  right: 450px;
+  transform: skew(-45deg, 45deg);
+  transition: all 0.5s;
+}
+.main_img .img-box img {
+  width: 100%;
+}
+
+.img-box .model-introduct {
+  position: absolute;
+  color: white;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  display: none;
+}
+.img-box .model-introduct p {
+  font-size: 3em;
+}
+.img-box .model-introduct span {
+  position: relative;
+  font-size: 1em;
+  top: -1em;
+}
+
+.navbar {
+  position: fixed;
+  right: 0;
+  writing-mode: vertical-rl;
+  z-index: 3;
+}
+.philosophy {
+  margin: 0 auto;
+  width: 40%;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.auto-slide {
+  height: 190px;
+  background: url(img/main_img.jpeg) repeat-x left top;
+  background-position: 0px center;
+}
+.sub-main {
+  width: 40%;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(0px);
+  transition: all 1s;
+}
+.creators {
+  position: absolute;
+  top: 3300px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.dailylife {
+  position: absolute;
+  top: 3600px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.become {
+  position: absolute;
+  top: 3900px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.contact {
+  position: absolute;
+  top: 4400px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.imgmove {
+  opacity: 1;
+  transform: translateY(-30px);
+}
+.map {
+  position: absolute;
+  top: 4600px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 400px;
+  transition: all 1s;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+.map .material-icons {
+  position: relative;
+  color: gray;
+  font-size: 100px;
+  left: 48vw;
+}
+
+/* swiper 모달 */
+
+#modal-background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 110%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+}
+.open {
+  display: block;
+}
+
+#close-cross {
+  position: absolute;
+  color: white;
+  font-size: 2em;
+  top: 1em;
+  right: 4em;
+  font-weight: lighter;
+  z-index: 10;
+}
+
+#total-slide {
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  background: transparent;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  /* border: rgb(71, 255, 111) 1px solid; */
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  /* border: tomato 1px solid; */
+}
+
+.mySwiper2 {
+  position: relative;
+  width: 60%;
+  height: 70%;
+  top: 5%;
+  left: 2%;
+}
+
+.mySwiper {
+  width: 60%;
+  height: 13%;
+  box-sizing: border-box;
+  /* padding: 10px 0; */
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.slide-up {
+  position: relative;
+  left: 10%;
+  /* border: tomato 1px solid; */
+}
+
+.slide-up img {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+.slide-up .upRight {
+  position: relative;
+  right: 16%;
+  text-align: center;
+  float: left;
+  color: white;
+
+  /* border: 1px solid orangered; */
+}
+.slide-up .upRight h2 {
+  font-size: 3em;
+  margin-bottom: 10%;
+}
+
+.slide-down img {
+  display: block;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
