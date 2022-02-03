@@ -33,6 +33,8 @@ $(window).scroll(function () {
 
 let class_cnt = document.getElementsByClassName("img-box").length;
 // console.log(class_cnt);
+let class_cnt2 = document.getElementsByClassName("modal_img").length;
+// console.log(class_cnt2);
 
 for (let i = 0; i < class_cnt; i++) {
   $(".img-box")
@@ -54,31 +56,20 @@ for (let i = 0; i < class_cnt; i++) {
 //swiper
 let swiper = new Swiper(".mySwiper", {
   spaceBetween: 10,
-  slidesPerView: 4,
+  slidesPerView: "auto",
   freeMode: true,
   watchSlidesProgress: true,
 });
 let swiper2 = new Swiper(".mySwiper2", {
   spaceBetween: 10,
+  // autoHeight : true,
   navigation: {
     nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    // prevEl: ".swiper-button-prev",
   },
   thumbs: {
     swiper: swiper,
   },
 });
 
-// 모달창 열고 닫기
-
-$(".img-box")
-  .eq(0)
-  .click(function () {
-    // console.log("i");
-    $("#modal-background").css("display", "block");
-  });
-
-$("#close-cross").click(function () {
-  //   console.log("j");
-  $("#modal-background").css("display", "none");
-});
+// 메인 1번을 클릭하면 1번 세트의 이미지들로 교체된다.
