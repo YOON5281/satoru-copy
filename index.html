@@ -21,6 +21,7 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script defer src="main.js"></script>
     <script defer src="modal.js"></script>
+    <script defer src="modelProfile.js"></script>
     <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -38,15 +39,14 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500&display=swap" rel="stylesheet">
 
   </head>
   <body>
     <div class="wrap"> 
       <!--웹 전체를 싸고 있음 -->
       <div class="main_title" id="main_title">
-        <h1>SATORU JAPAN</h1>
-        <span>INTERNATIONAL MODELAGENCY</span>
+        <h1><img src = "img/h1_img.png" alt="main-logo"></h1>
       </div>
       <!-- nav 자리 -->
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -77,11 +77,11 @@
           <div class="col-6 col-md-4 img-box">
             <div class="shadow"></div>
               <div class="model-introduct">
-                <p>Ami</p>
-                <span >177/80/60/89</span>
+                <p class="model-name">Ami</p>
+                <span class="model-profile" >177/80/60/89</span>
                 <br><p>+</p>
               </div>
-              <img src="img/25610.jpg" />
+              <img class="model-main" src="" alt="첫째 메인" />
           </div>
           <div class="col-6 col-md-4 img-box">
             <div class="shadow"></div>
@@ -90,7 +90,7 @@
             <span >177/80/60/89</span>
             <br><p>+</p>
           </div>
-          <img src="img/25636.jpg" /></div>
+          <img class="model-main" src="" alt="둘째 메인" /></div>
           <div class="col-6 col-md-4 img-box">
             <div class="shadow"></div>
             <div class="model-introduct">
@@ -98,7 +98,7 @@
               <span >177/80/60/89</span>
               <br><p>+</p>
             </div>
-            <img src="img/25637.jpg" />
+            <img class="model-main" src="" alt="셋째 메인" />
           </div>
         
           <div class="col-6 col-md-4 img-box">
@@ -245,12 +245,12 @@
       <!-- 하단 글과 이미지들 -->
       <div class="philosophy" id="philosophy">
         <h2>PHILOSOPHY</h2>
-        <span
+        <p class="sub_letters"
           >Satoru Japan Inc. has been in the International modeling business for
           over 40 years and made a great contribution to the International,
           Japanese and Mixed model's field in Japan, now having strong Japanese
-          division which produces International Japanese girls as well.</span
-        >
+          division which produces International Japanese girls as well.
+          </p>
       </div>
 
       <div class="auto-slide"></div>
@@ -261,18 +261,18 @@
       </div>
       <div class="dailylife sub-main" id="dailylife">
         <h2>DAILY LIFE IN TOKYO</h2>
-        <p>more</p>
+        <p>MORE</p>
       </div>
       <div class="become sub-main">
         <h2>BECOME A MODEL</h2>
-        <p>
-          If you have a dual nationality (Part Japanese)<br />
+        <p class="sub_letters">
+          If you have a dual nationality (Part Japanese)<br /><br />
           Ready to get noticed? Then you're in the right place. First and
           foremost: you don't need any previous experience or a portfolio of
           expensive professional headshots to apply. We're looking for the
           world's next great modeling talent, no matter where in the world that
           takes us. So don't be shy. It's time to introduce yourself to SATORU
-          JAPAN — and just maybe the world!<br />
+          JAPAN — and just maybe the world!<br /><br />
           Actually, We don't want to call you "half". You are A hybrid person
           who knows more than one culture. Your senses and experience are
           valuable. The place to make use of it may be Tokyo.Registration is
@@ -409,7 +409,14 @@
     </div>
   </div>
 </div>
-      
+
+
+  <!-- small modal -->
+<div id='s-modal-background'>
+
+</div>
+
+
 
       <!-- Optional JavaScript; choose one of the two! -->
 

@@ -1,0 +1,32 @@
+const modelProfile = [
+  {
+    name: "Ami Suzuki",
+    height: "177",
+    bust: "80",
+    waist: "60",
+    hips: "89",
+    shoes: "25.5",
+    hair: "Black",
+    eyes: "DK.Brown",
+  },
+  {
+    name: "Anna Herrera",
+    height: "177",
+    bust: "78",
+    waist: "60",
+    hips: "86",
+    shoes: "24.5",
+    hair: "Brown",
+    eyes: "Brown",
+  },
+  {
+    name: "Azlin N",
+    height: "174",
+    bust: "83",
+    waist: "63",
+    hips: "87",
+    shoes: "24.5",
+    hair: "Brown",
+    eyes: "GreenBlue",
+  },
+];

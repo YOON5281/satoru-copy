@@ -1,3 +1,6 @@
+$("body").css("display", "none");
+$("body").fadeIn(1000);
+
 let i = 0;
 setInterval(function () {
   $(".auto-slide").css("background-position", `-${i / 5}px center`);
@@ -6,25 +9,25 @@ setInterval(function () {
 $(window).scroll(function () {
   const height = $(window).scrollTop();
   console.log(height);
-  if (height > 2300) {
+  if (height > 2500) {
     $(".creators").addClass("imgmove");
   } else {
     $(".creators").removeClass("imgmove");
   }
 
-  if (height > 2600) {
+  if (height > 2800) {
     $(".dailylife").addClass("imgmove");
   } else {
     $(".dailylife").removeClass("imgmove");
   }
 
-  if (height > 2800) {
+  if (height > 3200) {
     $(".become").addClass("imgmove");
   } else {
     $(".become").removeClass("imgmove");
   }
 
-  if (height > 3200) {
+  if (height > 3600) {
     $(".contact").addClass("imgmove");
   } else {
     $(".contact").removeClass("imgmove");
@@ -72,4 +75,9 @@ let swiper2 = new Swiper(".mySwiper2", {
   },
 });
 
-// 메인 1번을 클릭하면 1번 세트의 이미지들로 교체된다.
+// 모달창 첫째 사진들로 이미지와 내용 교체
+for (let k = 0; k < 3; k++) {
+  $(".model-main")
+    .eq(k)
+    .attr("src", `img/modal${k + 1}-1.jpeg`);
+}
