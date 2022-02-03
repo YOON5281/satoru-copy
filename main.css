@@ -3,7 +3,7 @@
   padding: 0;
 }
 .wrap {
-  height: 5500px;
+  height: 5000px;
 }
 
 .main_title {
@@ -22,6 +22,7 @@
 }
 .main_img .img-box {
   position: relative;
+  margin-bottom: 10px;
   /* border: 1px solid red; */
   overflow: hidden;
 }
@@ -66,10 +67,33 @@
 }
 .philosophy {
   margin: 0 auto;
-  width: 40%;
+  width: 30%;
   text-align: center;
   margin-top: 60px;
   margin-bottom: 60px;
+}
+.philosophy span {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+}
+@media all and (min-width: 721px) and (max-width: 1200px) {
+  .philosophy {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}
+@media all and (max-width: 720px) {
+  .philosophy {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
 }
 .auto-slide {
   height: 190px;
@@ -84,29 +108,30 @@
   transition: all 1s;
 }
 .creators {
-  position: absolute;
-  top: 3300px;
+  position: relative;
+  top: 200px;
   left: 0;
   right: 0;
   margin: auto;
 }
+
 .dailylife {
-  position: absolute;
-  top: 3600px;
+  position: relative;
+  top: 400px;
   left: 0;
   right: 0;
   margin: auto;
 }
 .become {
-  position: absolute;
-  top: 3900px;
+  position: relative;
+  top: 600px;
   left: 0;
   right: 0;
   margin: auto;
 }
 .contact {
-  position: absolute;
-  top: 4400px;
+  position: relative;
+  top: 800px;
   left: 0;
   right: 0;
   margin: auto;
@@ -116,8 +141,8 @@
   transform: translateY(-30px);
 }
 .map {
-  position: absolute;
-  top: 4600px;
+  position: relative;
+  top: 900px;
   left: 0;
   right: 0;
   margin: auto;
@@ -176,7 +201,6 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-
   background: transparent;
 
   /* Center slide text vertically */
@@ -248,7 +272,7 @@
   position: relative;
   display: block;
   height: auto;
-  width: 100%;
+  width: 90%;
   object-fit: cover;
 }
 

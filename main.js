@@ -5,26 +5,26 @@ setInterval(function () {
 }, 1);
 $(window).scroll(function () {
   const height = $(window).scrollTop();
-  //   console.log(height);
-  if (height > 2500) {
+  console.log(height);
+  if (height > 2300) {
     $(".creators").addClass("imgmove");
   } else {
     $(".creators").removeClass("imgmove");
   }
 
-  if (height > 2800) {
+  if (height > 2600) {
     $(".dailylife").addClass("imgmove");
   } else {
     $(".dailylife").removeClass("imgmove");
   }
 
-  if (height > 3000) {
+  if (height > 2800) {
     $(".become").addClass("imgmove");
   } else {
     $(".become").removeClass("imgmove");
   }
 
-  if (height > 3400) {
+  if (height > 3200) {
     $(".contact").addClass("imgmove");
   } else {
     $(".contact").removeClass("imgmove");
@@ -62,10 +62,10 @@ let swiper = new Swiper(".mySwiper", {
 });
 let swiper2 = new Swiper(".mySwiper2", {
   spaceBetween: 10,
-  // autoHeight : true,
+  // autoHeight: true,
   navigation: {
     nextEl: ".swiper-button-next",
-    // prevEl: ".swiper-button-prev",
+    prevEl: ".swiper-button-prev",
   },
   thumbs: {
     swiper: swiper,
