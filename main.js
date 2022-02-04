@@ -1,3 +1,6 @@
+$("body").css("display", "none");
+$("body").fadeIn(1000);
+
 let i = 0;
 setInterval(function () {
   $(".auto-slide").css("background-position", `-${i / 5}px center`);
@@ -5,26 +8,26 @@ setInterval(function () {
 }, 1);
 $(window).scroll(function () {
   const height = $(window).scrollTop();
-  console.log(height);
-  if (height > 2300) {
+  // console.log(height);
+  if (height > 2500) {
     $(".creators").addClass("imgmove");
   } else {
     $(".creators").removeClass("imgmove");
   }
 
-  if (height > 2600) {
+  if (height > 2800) {
     $(".dailylife").addClass("imgmove");
   } else {
     $(".dailylife").removeClass("imgmove");
   }
 
-  if (height > 2800) {
+  if (height > 3200) {
     $(".become").addClass("imgmove");
   } else {
     $(".become").removeClass("imgmove");
   }
 
-  if (height > 3200) {
+  if (height > 3600) {
     $(".contact").addClass("imgmove");
   } else {
     $(".contact").removeClass("imgmove");
@@ -33,8 +36,6 @@ $(window).scroll(function () {
 
 let class_cnt = document.getElementsByClassName("img-box").length;
 // console.log(class_cnt);
-let class_cnt2 = document.getElementsByClassName("modal_img").length;
-// console.log(class_cnt2);
 
 for (let i = 0; i < class_cnt; i++) {
   $(".img-box")
@@ -71,5 +72,3 @@ let swiper2 = new Swiper(".mySwiper2", {
     swiper: swiper,
   },
 });
-
-// 메인 1번을 클릭하면 1번 세트의 이미지들로 교체된다.

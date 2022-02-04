@@ -1,0 +1,26 @@
+{
+  "name": "satoru-copy",
+  "version": "1.0.0",
+  "description": "사토루 사이트의 카피 사이트 입니다.",
+  "scripts": {
+    "dev": "parcel index.html"
+   
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOON5281/satoru-copy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YOON5281/satoru-copy/issues"
+  },
+  "homepage": "https://github.com/YOON5281/satoru-copy#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
