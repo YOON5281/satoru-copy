@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // 모델 프로필
 
 const modelProfile = [
@@ -57,6 +58,16 @@ for (let n = 0; n < 3; n++) {
     .click(function () {
       //PC용 모달창
       if (window.innerWidth > 900) {
+=======
+// 모달창 열기
+
+for (let n = 0; n < 3; n++) {
+  $(".img-box")
+    .eq(n)
+    .click(function () {
+      if (window.innerWidth > 720) {
+        // console.log("i");
+>>>>>>> d6ebf6c01d659d8a7b47b33f0d2bdb9a9c29d5d0
         $("#modal-background").fadeIn(500);
 
         for (let m = 0; m < class_cnt2; m++) {
@@ -67,7 +78,10 @@ for (let n = 0; n < 3; n++) {
             .eq(m)
             .attr("src", `img/modal${n + 1}-${m + 1}.jpeg`);
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> d6ebf6c01d659d8a7b47b33f0d2bdb9a9c29d5d0
         $(".profile").html(
           `<h2>${modelProfile[n].name}</h2>
          <p>
@@ -81,6 +95,7 @@ for (let n = 0; n < 3; n++) {
          </p>`
         );
       }
+<<<<<<< HEAD
       // 모바일용 모달창
       else {
         $("#s-modal-background").fadeIn(500);
@@ -105,6 +120,8 @@ for (let n = 0; n < 3; n++) {
           );
         }
       }
+=======
+>>>>>>> d6ebf6c01d659d8a7b47b33f0d2bdb9a9c29d5d0
     });
 }
 
@@ -125,3 +142,10 @@ $(".close-cross").click(function () {
   swiper.slideTo(0);
   swiper2.slideTo(0);
 });
+
+// 모달창 첫째 사진들로 이미지와 내용 교체
+for (let k = 0; k < 3; k++) {
+  $(".model-main")
+    .eq(k)
+    .attr("src", `img/modal${k + 1}-1.jpeg`);
+}

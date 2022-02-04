@@ -8,7 +8,11 @@ setInterval(function () {
 }, 1);
 $(window).scroll(function () {
   const height = $(window).scrollTop();
+<<<<<<< HEAD
   // console.log(height);
+=======
+  console.log(height);
+>>>>>>> d6ebf6c01d659d8a7b47b33f0d2bdb9a9c29d5d0
   if (height > 2500) {
     $(".creators").addClass("imgmove");
   } else {
@@ -72,3 +76,13 @@ let swiper2 = new Swiper(".mySwiper2", {
     swiper: swiper,
   },
 });
+<<<<<<< HEAD
+=======
+
+// 모달창 첫째 사진들로 이미지와 내용 교체
+for (let k = 0; k < 3; k++) {
+  $(".model-main")
+    .eq(k)
+    .attr("src", `img/modal${k + 1}-1.jpeg`);
+}
+>>>>>>> d6ebf6c01d659d8a7b47b33f0d2bdb9a9c29d5d0
