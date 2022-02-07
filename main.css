@@ -189,7 +189,8 @@
   position: relative;
   color: gray;
   font-size: 100px;
-  left: 48vw;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* swiper 모달 */
@@ -211,7 +212,7 @@
   color: white;
   font-size: 2em;
   top: 1em;
-  right: 4em;
+  right: 1em;
   font-weight: lighter;
   z-index: 10;
   transition: all 0.5s;
