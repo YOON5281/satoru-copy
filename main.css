@@ -74,6 +74,7 @@
 
 .navbar {
   position: fixed;
+  top: 5vw;
   right: 0;
   writing-mode: vertical-rl;
   z-index: 3;
