@@ -79,6 +79,11 @@
   z-index: 3;
 }
 
+.nav-link {
+  /* border: 1px solid red; */
+  white-space: nowrap;
+}
+
 @media all and (max-width: 990px) {
   .navbar {
     display: none;
@@ -153,6 +158,7 @@
   right: 0;
   margin: auto;
 }
+
 .contact {
   position: relative;
   top: 800px;
